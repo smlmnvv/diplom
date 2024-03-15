@@ -1,0 +1,208 @@
+.wrapper 
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main 
+{
+    flex: 1 1 auto;
+}
+
+.container 
+{
+    max-width: 1260px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header 
+{
+    background-color: rgb(7, 7, 7);
+    color: white;
+    font-family: 'Panton', sans-serif;
+}
+
+.header__top
+{
+    padding: 10px 0;
+}
+
+.header__bottom
+{
+    padding-bottom: 10px;
+}
+
+.logo 
+{
+    max-width: 180px;
+}
+
+.header__top-ul 
+{
+    gap: 30px;
+}
+
+.header__top-link 
+{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header__bottom-link
+{
+    font-weight: bold;
+}
+
+.hero 
+{
+    background-image: url(../img/formimg.webp);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+}
+
+.hero__box 
+{
+    text-align: center;
+}
+
+.hero__text 
+{
+    font-size: 22px;
+}
+
+.consultation
+{
+    padding: 50px 0;
+    background: linear-gradient(to top left, #50C878, #b0ec40);
+    background-size: cover;
+}
+
+.consultation__form-input 
+{
+    height: 25px;
+    margin: 0 15px;
+    width: 300px;
+    margin-bottom: 20px;
+    background: none;
+    border-bottom: 1px solid gray;
+    font-family: inherit;
+    outline:none;
+    font-size: 16px;
+    color:black;
+    text-align: center;
+}
+
+
+.advantages
+{
+    background-color: ghostwhite;
+    padding: 50px 0;
+}
+
+.advantages__row 
+{
+    max-width: 900px;
+}
+
+.advantages__subtext
+{
+    max-width: 400;
+}
+
+.advantages__img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.categories
+{
+    background-color: ghostwhite;
+}
+
+.categories__img 
+{
+    max-width: 300px;
+}
+
+.form
+{   min-height: 100dvh;
+    background-image: url(../img/formimg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.form__box
+{
+    padding: 20px;
+    border-radius: 2em;
+}
+
+.form__form-input
+{
+    height: 25px;
+    margin: 0 15px;
+    margin-bottom: 20px;
+    background: none;
+    border-bottom: 1px solid grey;
+    font-family: inherit;
+    outline:none;
+    font-size: 16px;
+    color:black;
+}
+
+.contacts
+{
+    background-color: ghostwhite;
+}
+
+.contacts__link
+{
+    color: black !important;
+}
+
+.footer
+{
+    background-color: black;
+}
+
+.footer__link
+{
+    color:white !important;
+    padding: 3px 0;
+    font-family: 'Panton', sans-serif;
+}
+
+.iphone__img
+{
+    max-width: 400px;
+    max-height: 250px;
+    padding-bottom: 20px;
+}
+
+.page__content
+{
+    background-color: ghostwhite;
+}
+
+.page__form
+{
+    background: linear-gradient(to top left, #50C878, #b0ec40);
+    background-size: cover;
+}
+
+.page__img
+{
+    max-width: 416px;
+    max-height: 312px;
+
+}
