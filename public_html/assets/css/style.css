@@ -204,3 +204,9 @@
 {
     margin-bottom: 75px;
 }
+
+.documents
+{
+    min-height: 50vh;
+    background-color: #F2F6FE;
+}

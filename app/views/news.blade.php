@@ -7,7 +7,7 @@
         <h1 class="page__title-title fw-bold text-white">Новости</h1>
             <div class="row">
                 <div class="col">
-                    <form action="">
+                    <form action="/search">
                         <div class="search d-flex align-items-center">
                             <input type="search" class="news__search" placeholder="Поиск по новостям">
                             <button type="submit" class="news__search-btn">

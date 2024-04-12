@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col d-flex flex-column align-items-center">
-                    <p class="number__text text-white text-center fw-bold text-uppercase">телефон горячей линии:</p>
+                    <p class="number__text text-white fw-bold">Телефон горячей линии:</p>
                     <a href="tel: 83855822909" class="number__text text-white fw-bold">8-(38558)-22909</a>
                 </div>
             </div>
