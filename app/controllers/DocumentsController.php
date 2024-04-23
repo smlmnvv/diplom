@@ -4,4 +4,4 @@ $title = "УСЗН по Шелаболихинскому району. Доку�
 
 $pageTitle = "Документы";
 
-require APP . '/views/documents.blade.php';
+require VIEWS . '/documents.blade.php';

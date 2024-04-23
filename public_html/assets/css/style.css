@@ -1,3 +1,8 @@
+:root
+{
+    --bg-color: #F2F6FE;
+}
+
 .wrapper 
 {
     display: flex;
@@ -165,7 +170,7 @@
 .news
 {
     padding: 50px 0;
-    background-color: #F2F6FE;
+    background-color: var(--bg-color);
 }
 
 .news__search
@@ -190,7 +195,7 @@
 .news__img
 {
     max-width: 300px;
-    max-height: 300px;
+    border-radius: 20px;
 }
 
 .news__title
@@ -201,17 +206,35 @@
 
 .news__info
 {
-    margin-bottom: 75px;
+    margin-bottom: 40px;
 }
 
 .documents
 {
     min-height: 50vh;
-    background-color: #F2F6FE;
+    background-color: var(--bg-color);
 }
 
 .feedback
 {
     padding: 50px 0;
-    background-color: #F2F6FE;
+    background-color: var(--bg-color);
+}
+
+.post
+{
+    padding: 50px 0;
+    background-color: var(--bg-color);
+}
+
+.post__img
+{   
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.result
+{
+    padding: 50px 0;
+    background-color: var(--bg-color);
 }

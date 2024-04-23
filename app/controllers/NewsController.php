@@ -1,5 +1,7 @@
 <?php
 
+require MODELS . '/NewsModel.php';
+
 $title = "УСЗН по Шелаболихинскому району. Новости";
 
-require APP . '/views/news.blade.php';
+require VIEWS . '/news.blade.php';

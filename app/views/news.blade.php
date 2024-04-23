@@ -7,7 +7,7 @@
         <h1 class="page__title-title fw-bold text-white">Новости</h1>
             <div class="row">
                 <div class="col">
-                    <form action="/search">
+                    <form action="/news/search" method="post">
                         <div class="search d-flex align-items-center mt-3">
                             <input type="search" class="news__search" placeholder="Поиск по новостям">
                             <button type="submit" class="news__search-btn">
@@ -24,19 +24,21 @@
 
     <section class="news">
         <div class="container">
-            <div class="row">
+        <?php foreach ($news as $new): ?>
+            <div class="row mb-4">
                 <div class="col-md-4">
-                    <img src="assets/img/newsImg.png" alt="новость" srcset="" class="news__img">
+                    <img src="<?= $new['img'] ?>" alt="новость" srcset="" class="news__img">
                 </div>
                 <div class="col-md-8 d-flex flex-column justify-content-center">
-                    <h4 class="news__title fw-bold"><a href="#">Какой у вас уровень трудовой грамотности?</a></h4>
-                    <p class="news__info">Проверить поможет «Трудовой зачет» - просветительская акция, позволяющая  оценить знания в сфере труда и занятости, повысить свои  профессиональные навыки и понять, как вести себя на рынке труда.</p>
+                    <h4 class="news__title fw-bold"><a href="/news/post?id=<?= $new['id'] ?>"><?= $new['title'] ?></a></h4>
+                    <p class="news__info"><?= $new['description'] ?></p>
                     <div class="box d-flex justify-content-between">
-                        <a href="#" class="fw-bold">Подробнее</a>
-                        <span class="news__date">12.04.2024</span>
+                        <a href="/news/post?id=<?= $new['id'] ?>" class="fw-bold">Подробнее</a>
+                        <span class="news__date"><?= $new['date'] ?></span>
                     </div>
                 </div>
             </div>
+            <?php endforeach ?>
         </div>
     </section>
 </main>

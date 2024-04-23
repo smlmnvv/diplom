@@ -17,15 +17,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="assets/img/newsPhoto.png" alt="фотография" class="last__news-img img-fluid">
+                    <img src="<?= $newsOfDay['img'] ?>" alt="фотография" class="last__news-img img-fluid">
                 </div>
                 <div class="col-md-6 d-flex flex-column justify-content-center">
                     <p class="fw-bold">Новость дня</p>
-                    <p>В Шелаболихинском районе проживает 35 Почетных доноров.<br>  
-                    В соответствии с Федеральным законом РФ от 20.07.2012 №125-ФЗ «О донорстве крови и ее компонентов» лица, награжденные нагрудным знаком  «Почетный донор России» <strong>имеют право на ежегодную денежную выплату.</strong></p>
+                    <p><?= $newsOfDay['title'] ?></p>
+                    <p><?= $newsOfDay['description'] ?></p>
                     <div class="box d-flex justify-content-between mt-5">
-                        <a href="#" class="fw-bold">Подробнее</a>
-                        <p>11.04.2024</p>
+                        <a href="/news/post?id=<?= $newsOfDay['id'] ?>" class="fw-bold">Подробнее</a>
+                        <p><?= $newsOfDay['date'] ?></p>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@
 
 return [
     'host' => 'localhost',
-    'dbname' => '2x2',
+    'dbname' => 'uszn_shelab',
     'user' => 'root',
     'password' => '',
 ];

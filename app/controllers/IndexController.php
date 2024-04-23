@@ -1,5 +1,7 @@
 <?php
 
+require MODELS . '/IndexModel.php';
+
 $title = "УСЗН по Шелаболихинскому району";
 
-require APP . '/views/index.blade.php';
+require VIEWS . '/index.blade.php';

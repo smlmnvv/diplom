@@ -4,4 +4,4 @@ $title = "УСЗН по Шелаболихинскому району. Обра�
 
 $pageTitle = "Обратная связь";
 
-require_once APP . '/views/feedback.blade.php';
+require_once VIEWS . '/feedback.blade.php';

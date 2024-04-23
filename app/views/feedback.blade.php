@@ -21,7 +21,7 @@
                     <label for="exampleFormControlTextarea1" class="form-label">Причина обращения</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary mt-2">Отправить</button>
+                <button type="submit" class="btn btn-outline-primary mt-2">Отправить</button>
                 </form>
             </div>
         </div>
