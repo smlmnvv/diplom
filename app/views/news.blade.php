@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col">
                     <form action="/search">
-                        <div class="search d-flex align-items-center">
+                        <div class="search d-flex align-items-center mt-3">
                             <input type="search" class="news__search" placeholder="Поиск по новостям">
                             <button type="submit" class="news__search-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">

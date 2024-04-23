@@ -2,11 +2,7 @@
 
 <main class="main">
 
-    <section class="page__title">
-        <div class="container">
-            <h1 class="page__title-title fw-bold text-white">Документы</h1>
-        </div>
-    </section>
+<?php require_once 'modules/pageTitle.php' ?>
 
     <section class="documents">
         <div class="container">
