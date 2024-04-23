@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="<?= $newsOfDay['img'] ?>" alt="фотография" class="last__news-img img-fluid">
+                    <img src="<?= $newsOfDay['img'] ?>" alt="фотография" class="last__news-img">
                 </div>
                 <div class="col-md-6 d-flex flex-column justify-content-center">
                     <p class="fw-bold">Новость дня</p>
@@ -53,39 +53,20 @@
     <section class="important__links">
         <div class="container">
             <h2 class="important__links-title fw-bold">Полезные ссылки</h2>
-            <div class="important__links-inner d-flex justify-content-center">
-            <div class="row">
-                    <div class="col-md-3">
+                <div class="important__links-inner">
+                    <div class="row">
+                    <?php foreach($links as $link) : ?>
+                        <div class="col-md-3 mb-3 d-flex justify-content-center">
                             <div class="important__links-box d-flex justify-content-center align-items-center">
-                                <a href="#">
-                                    <p class="text-white text-center fw-bold px-3">Если родился первый ребенок</p>
+                                <a href="<?= $link['link'] ?>">
+                                    <p class="text-white text-center fw-bold px-3"><?= $link['title'] ?></p>
                                 </a>
                             </div>
-                    </div>
-                    <div class="col-md-3">
-                            <div class="important__links-box d-flex justify-content-center align-items-center">
-                                <a href="#">
-                                    <p class="text-white text-center fw-bold px-3">Если родился третий ребенок</p>
-                                </a>
-                            </div>
-                    </div>
-                    <div class="col-md-3">
-                            <div class="important__links-box d-flex justify-content-center align-items-center">
-                                <a href="#">
-                                    <p class="text-white text-center fw-bold px-3">Национальный проект “Демография”</p>
-                                </a>
-                            </div>
-                    </div>
-                    <div class="col-md-3">
-                            <div class="important__links-box d-flex justify-content-center align-items-center">
-                                <a href="#">
-                                    <p class="text-white text-center fw-bold px-3">Социальный контракт</p>
-                                </a>
-                            </div>
+                        </div>
+                    <?php endforeach ?>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="contacts">

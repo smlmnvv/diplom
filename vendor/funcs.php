@@ -10,7 +10,7 @@ function dd($data)
 
 function abort($code = 404)
 {
-    http_response_code(404);
+    http_response_code($code);
     require_once VIEWS . "/errors/{$code}Error.php";
     die;
 }
