@@ -1,5 +1,7 @@
 <?php
 
+require MODELS . '/DocumentsModel.php';
+
 $title = "УСЗН по Шелаболихинскому району. Документы";
 
 $pageTitle = "Документы";

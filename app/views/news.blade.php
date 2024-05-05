@@ -25,7 +25,7 @@
     <section class="news">
         <div class="container">
         <?php foreach ($news as $new): ?>
-            <div class="row mb-4">
+            <div class="row mb-5">
                 <div class="col-md-4">
                     <img src="<?= $new['img'] ?>" alt="новость" srcset="" class="news__img">
                 </div>
