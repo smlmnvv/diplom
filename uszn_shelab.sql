@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 13 2024 г., 12:33
+-- Время создания: Май 14 2024 г., 00:07
 -- Версия сервера: 8.0.30
 -- Версия PHP: 8.1.9
 
@@ -29,8 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `documents` (
   `id` int NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `slug` varchar(255) COLLATE utf8mb4_general_ci NOT NULL
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `slug` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -50,6 +50,32 @@ INSERT INTO `documents` (`id`, `name`, `slug`) VALUES
 (10, 'Положение об УСЗН по Шелаболихинскому району №6', 'assets/documents/Положение+об++УСЗН+по+Шелаболихинскому+району+6.jpg'),
 (11, 'Положение об УСЗН по Шелаболихинскому району №7', 'assets/documents/Положение+об++УСЗН+по+Шелаболихинскому+району+7.jpg'),
 (12, 'Положение об УСЗН по Шелаболихинскому району №8', 'assets/documents/Положение+об++УСЗН+по+Шелаболихинскому+району+8.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `feedback`
+--
+
+CREATE TABLE `feedback` (
+  `id` int NOT NULL,
+  `fio` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `message` text COLLATE utf8mb4_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Дамп данных таблицы `feedback`
+--
+
+INSERT INTO `feedback` (`id`, `fio`, `email`, `message`) VALUES
+(1, 'Vitae sapiente archi', 'gyrehega@mailinator.com', 'Et culpa ea aut quo'),
+(2, 'Doloremque quo error', 'wuzoc@mailinator.com', 'Non deserunt ut haru'),
+(3, 'Doloremque quo error', 'wuzoc@mailinator.com', 'Non deserunt ut haru'),
+(4, 'Inventore reprehende', 'lyjecanuzy@mailinator.com', 'Fugit in voluptate '),
+(6, 'Est sed quibusdam ni', 'javihatug@mailinator.com', 'Iste voluptatem irur'),
+(7, 'Repellendus Dolorem', 'sunovokad@mailinator.com', 'Id quod neque molest'),
+(8, 'Cupidatat natus sed ', 'pyderaw@mailinator.com', 'Odio dolor officiis ');
 
 -- --------------------------------------------------------
 
@@ -113,6 +139,12 @@ ALTER TABLE `documents`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `feedback`
+--
+ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `links`
 --
 ALTER TABLE `links`
@@ -133,6 +165,12 @@ ALTER TABLE `news`
 --
 ALTER TABLE `documents`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT для таблицы `feedback`
+--
+ALTER TABLE `feedback`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблицы `links`
