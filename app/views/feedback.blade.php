@@ -8,6 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
+                <p class="h4 mb-4">У Вас есть какой - либо вопрос? Заполните небольшую форму ниже, и как только мы получим Ваше обращение, сразу же на него ответим.</p>
                 <form action="" class="form">
                 <div class="mb-3">
                     <label for="fio" class="form-label">ФИО</label>

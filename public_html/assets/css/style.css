@@ -7,6 +7,7 @@
 {
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 
 }
 
@@ -52,6 +53,7 @@
 {
     height: 110px;
     border-bottom: 1px solid rgb(21, 96, 189);
+    background-color: var(--bg-color);
 }
 
 .nav__ul
@@ -94,7 +96,7 @@
 .last__news
 {
     padding: 50px 0;
-    background-color: #F2F6FE;
+    background-color: var(--bg-color);
 }
 
 .last__news-img
@@ -170,7 +172,6 @@
 .news
 {
     padding: 50px 0;
-    background-color: var(--bg-color);
 }
 
 .news__search
@@ -212,13 +213,11 @@
 .documents
 {
     min-height: 50vh;
-    background-color: var(--bg-color);
 }
 
 .feedback
 {
     padding: 50px 0;
-    background-color: var(--bg-color);
 }
 
 .post
@@ -235,8 +234,7 @@
 
 .result
 {
-    padding: 50px 0;
-    background-color: var(--bg-color);
+    padding-top: 50px;
 }
 
 .result__title
