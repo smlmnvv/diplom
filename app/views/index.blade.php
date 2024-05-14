@@ -16,10 +16,10 @@
     <section class="last__news">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="<?= $newsOfDay['img'] ?>" alt="фотография" class="last__news-img">
+                <div class="col-lg-6">
+                    <img src="<?= $newsOfDay['img'] ?>" alt="фотография" class="last__news-img mb-3">
                 </div>
-                <div class="col-md-6 d-flex flex-column justify-content-center">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
                     <p class="fw-bold">Новость дня</p>
                     <p><?= $newsOfDay['title'] ?></p>
                     <p><?= $newsOfDay['description'] ?></p>
@@ -91,7 +91,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A98728c00981eb19ed971005baa70ddf150341218166d77d18c0d0ee935d3a104&amp;width=580&amp;height=387&amp;lang=ru_RU&amp;scroll=true;apikey=09c892f6-26bb-46a1-8b72-7a47577a9edd"></script>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A98728c00981eb19ed971005baa70ddf150341218166d77d18c0d0ee935d3a104&amp;max-width=100%&amp;height=387&amp;lang=ru_RU&amp;scroll=true;apikey=09c892f6-26bb-46a1-8b72-7a47577a9edd"></script>
                 </div>
             </div>
         </div>

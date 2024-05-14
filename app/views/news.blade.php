@@ -26,10 +26,10 @@
         <div class="container">
         <?php foreach ($news as $new): ?>
             <div class="row mb-5">
-                <div class="col-md-4">
-                    <img src="<?= $new['img'] ?>" alt="новость" srcset="" class="news__img">
+                <div class="col-lg-4">
+                    <img src="<?= $new['img'] ?>" alt="новость" srcset="" class="news__img mb-3">
                 </div>
-                <div class="col-md-8 d-flex flex-column justify-content-center">
+                <div class="col-lg-8 d-flex flex-column justify-content-center">
                     <h4 class="news__title fw-bold"><a href="/news/post?id=<?= $new['id'] ?>"><?= $new['title'] ?></a></h4>
                     <p class="news__info"><?= $new['description'] ?></p>
                     <div class="box d-flex justify-content-between">

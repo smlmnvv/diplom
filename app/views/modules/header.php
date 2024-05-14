@@ -20,7 +20,7 @@
     <div class="header__top d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-4">
                     <a href="https://vk.com/usznshelabolikha" class="header__social-link vk">
                         <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M4.26 4.26C3 5.532 3 7.566 3 11.64v.72c0 4.068 0 6.102 1.26 7.38C5.532 21 7.566 21 11.64 21h.72c4.068 0 6.102 0 7.38-1.26C21 18.468 21 16.434 21 12.36v-.72c0-4.068 0-6.102-1.26-7.38C18.468 3 16.434 3 12.36 3h-.72C7.572 3 5.538 3 4.26 4.26m1.776 4.218H8.1c.066 3.432 1.578 4.884 2.778 5.184V8.478h1.938v2.958c1.182-.126 2.43-1.476 2.85-2.964h1.932a5.717 5.717 0 0 1-2.628 3.738a5.92 5.92 0 0 1 3.078 3.756h-2.13c-.456-1.422-1.596-2.526-3.102-2.676v2.676h-.24c-4.104 0-6.444-2.808-6.54-7.488"/></svg>
                     </a>
@@ -31,11 +31,11 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M17.83 12.74c-.28-.57-1.07-1.05-2.12-.24c-1.43 1.14-3.71 1.14-3.71 1.14s-2.28 0-3.71-1.14c-1.05-.81-1.84-.33-2.12.24c-.5 1 .06 1.49 1.33 2.3c1.09.7 2.58.96 3.54 1.06l-.8.8C9.1 18.03 8 19.12 7.25 19.88c-.45.46-.45 1.19 0 1.62l.14.16c.45.45 1.19.45 1.64 0L12 18.68c1.15 1.13 2.24 2.22 3 2.98c.45.45 1.18.45 1.64 0l.13-.16c.46-.43.46-1.16 0-1.62l-2.98-2.98l-.79-.81c.95-.09 2.42-.36 3.5-1.05c1.27-.81 1.83-1.3 1.33-2.3M12 4.57c1.38 0 2.5 1.12 2.5 2.49c0 1.38-1.12 2.49-2.5 2.49S9.5 8.44 9.5 7.06c0-1.37 1.12-2.49 2.5-2.49m0 7.55c2.8 0 5.06-2.26 5.06-5.06a5.06 5.06 0 1 0-10.12 0c0 2.8 2.26 5.06 5.06 5.06"/></svg>
                     </a>
                 </div>
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <a href="tel: 83855822909" class="text-white">8-(38558)-22909</a>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <a href="tel: 83855822909" class="header__phone text-white">8-(38558)-22909</a>
                 </div>
-                <div class="col-md-4 d-flex justify-content-end align-items-center">
-                    <a href="mailto: sheszn@mail.ru" class="text-white">sheszn@mail.ru</a>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a href="mailto: sheszn@mail.ru" class="header__mail text-white">sheszn@mail.ru</a>
                 </div>
             </div>
         </div>
@@ -45,13 +45,15 @@
         <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-between align-items-center">
-                    <div class="logo">
+                    <div class="logo d-flex align-items-center">
                         <a href="/">
-                            <img src="assets/img/logo.png" alt="лого" srcset="">
+                            <img src="assets/img/gerb.png" alt="лого" srcset="" width="100">
                         </a>
+                        <p class="header__title fw-bold mx-2">Управление социальной <br> защиты населения <br> по Шелаболихинскому району</p>
                     </div>
                     <nav class="nav">
-                        <ul class="nav__ul d-flex">
+                        <ul class="nav__ul">
+                            <p class="header__title-hide fw-bold">Управление социальной <br> защиты населения <br> по Шелаболихинскому району</p>
                             <li class="nav__li"><a href="/" class="nav__item text-dark">
                                 Главная
                             </a></li>
@@ -66,6 +68,11 @@
                             </a></li>
                         </ul>
                     </nav>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>

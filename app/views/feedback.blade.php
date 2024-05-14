@@ -15,7 +15,7 @@
                     <?php unset($_SESSION['msg']) ?>
                 <?php endif ?>
 
-                <form action="" class="form" method="post">
+                <form action="" class="feedback__form" method="post">
                 <div class="mb-3">
                     <label for="fio" class="form-label">ФИО</label>
                     <input type="text" class="form-control" placeholder="Введите ФИО" id="fio" name="fio" required>
