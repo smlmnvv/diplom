@@ -336,6 +336,7 @@
 {
     .nav__ul
     {
+        display: none;
         position: absolute;
         z-index: 5;
         background-color: var(--bg-color);
@@ -372,6 +373,7 @@
 
     .nav__ul.active
     {
+        display: flex;
         transform: translateY(0px);
     }
 
